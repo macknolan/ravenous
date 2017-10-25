@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './Business.css'
+import './Business.css';
 
-let Business =  {
+const business =  {
     imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
     name: 'MarginOtto Pizzeria',
     address: '1010 Paddington Way',
@@ -15,7 +15,7 @@ let Business =  {
 }
 
 class Business extends React.Component  {
-    render(
+    render()    {
         return (
             <div className="Business">
                 <div className="image-container">
@@ -35,9 +35,9 @@ class Business extends React.Component  {
                     </div>
                  </div>
             </div>
-    )
-        
     );
+
+    };
 }
 
 export default Business;

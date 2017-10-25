@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import logo from './logo.svg';
 import './App.css';
-import '../components/BusinessList/BusinessList.js';
-import '../components/SearchBar/SearchBar.js';
+import BusinessList from './components/BusinessList/BusinessList.js';
+import SearchBar from './components/SearchBar/SearchBar.js';
 
 class App extends React.Component {
   render() {
