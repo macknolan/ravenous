@@ -1,18 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './Business.css';
 
-const business =  {
-    imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
-    name: 'MarginOtto Pizzeria',
-    address: '1010 Paddington Way',
-    city: 'Flavortown',
-    state: 'NY',
-    zipCode: '10101',
-    category: 'Italian',
-    rating: 4.5,
-    reviewCount: 90
-}
+
 
 class Business extends React.Component  {
     render()    {
@@ -21,17 +10,17 @@ class Business extends React.Component  {
                 <div className="image-container">
                     <img src='https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg' alt=''/>
                 </div>
-                <h2>{Business.name}</h2>
+                <h2>{this.props.Business.name}</h2>
                 <div className="Business-information">
                     <div className="Business-address">
-                        <p>{Business.address}</p>
-                        <p>{Business.city}</p>
-                        <p>{Business.state} {Business.zipCode}</p>
+                        <p>{this.props.Business.address}</p>
+                        <p>{this.props.Business.city}</p>
+                        <p>{this.props.Business.state} {this.props.Business.zipCode}</p>
                     </div>
                     <div className="Business-reviews">
-                        <h3>{Business.category}</h3>
-                        <h3 className="rating">{Business.rating} Stars</h3>
-                        <p>{Business.reviewCount} reviews</p>
+                        <h3>{this.props.Business.category}</h3>
+                        <h3 className="rating">{this.props.Business.rating} Stars</h3>
+                        <p>{this.props.Business.reviewCount} reviews</p>
                     </div>
                  </div>
             </div>
